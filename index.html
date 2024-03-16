@@ -12,71 +12,87 @@
  <body class="m-0 p-0">
 
     <header  class="container"> 
-        <ul class="nav nav-tabs navbar-expand-md justify-content-around align-items-center navIzq">
-            <li class="nav-item">
-              <a class="nav-link color-lila" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link color-lila" href="./pages/uxui.html">UX/UI</a>
-            </li>
-        </ul> 
-        <a href="#" class="miLogo"><img src="./assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
-        <ul class="nav nav-tabs justify-content-around align-items-center navDer">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle color-lila" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Proyectos</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item color-lila" href="./pages/ilustraciones.html">Ilustraciones</a></li>
-                  <li><a class="dropdown-item color-lila" href="./pages/aquinohaynada.html">Cómic</a></li>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+              <!-- Logo que aparece en pantallas pequeñas-->
+              <a href="#" class="d-md-none miLogo"><img src="./assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
+          
+              <!-- Botón hamburguesa -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-between align-items-center">
+                  <li class="nav-item color-lila">
+                    <a class="nav-link color-lila" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item color-lila">
+                    <a class="nav-link color-lila" href="./pages/uxui.html">UX/UI</a>
+                  </li>
+                  <a href="#" class="miLogo d-none d-md-block"><img src="./assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
+                  <li class="nav-item dropdown color-lila">
+                    <a class="nav-link dropdown-toggle color-lila" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Proyectos</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item color-lila" href="./pages/ilustraciones.html">Ilustraciones</a></li>
+                      <li><a class="dropdown-item color-lila" href="./pages/aquinohaynada.html">Cómic</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item color-lila">
+                    <a class="nav-link color-lila" href="./pages/contacto.html">Contacto</a>
+                  </li>
                 </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link color-lila" href="./pages/contacto.html">Contacto</a>
-            </li>
-        </ul>
-       
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
             <div class="container-fluid imgFondo miPresentacion d-flex justify-content-center align-items-center">
-                <section class="text-white text-center ">
+                <section class="text-white text-center">
                     <h1 class="miNombre"">Ailén Jaccottet</h1>
                     <h2 class="fs-2">Ilustradora y UX/UI designer</h2>
                 </section>
             </div>
   
       
-        <section class="container tarjetasIndex"> 
+        <section class="container"> 
             <div class="row">
                 <div class="my-4 col-sm-12 col-md-4"> 
-                <div  class="bg-white shadow rounded">    
-                    <a href="./pages/ilustraciones.html" class="text-decoration-none text-dark"><img class="w-100 rounded" src="./assets/img/bbuny.webp" alt="Ilustración de una mano sosteniendo una flor con un solo pétalo. Se lee el texto "El último pétalo me dijo que aún hay chance"">
-                        <section class="ps-2">
-                            <p>Ilustraciones</p></a>
-                        </section>
+                  <div  class="bg-white shadow rounded"> 
+                    <div class="contenedor">
+                      <a href="./pages/ilustraciones.html" class="text-decoration-none text-dark"><img class="w-100 rounded" src="./assets/img/bbuny.webp" alt="Ilustración de una mano sosteniendo una flor con un solo pétalo. Se lee el texto "El último pétalo me dijo que aún hay chance"">
+                    </div>   
+                    <section class="ps-2">
+                      <p>Ilustraciones</p></a>
+                    </section>
                    
-                    </div>
+                  </div>
                 </div>
                 <div class="my-4 col-sm-12 col-md-4">
-                    <div  class="bg-white shadow rounded">
+                    <div  class="bg-white shadow rounded ">
+                      <div class="contenedor">
                         <a href="./pages/uxui.html" class="text-decoration-none text-dark"><img class="w-100 rounded" src="./assets/img/prototipo pagina principal.webp" alt="Teléfono móvil en diagonal, en la pantalla se ve el prototipo de la app The Best Beer"">
-                            <section class="ps-2">
-                                <p>UX/UI</p></a>
-                            </section>
-                        </div>
+                      </div>
+                      <section class="ps-2">
+                        <p>UX/UI</p></a>
+                      </section>
+                    </div>
                 </div>
                
-                    <div class="my-4 col-sm-12 col-md-4">
-                        <div  class="bg-white shadow rounded">
-                            <a href="./pages/aquinohaynada.html" class="text-decoration-none text-dark"><img class="w-100 rounded" src="./assets/img/floatin.webp" alt="Chica en el espacio sosteniendo una estrella">
-                                <section class="ps-2">
-                                    <p>Mi cómic</p></a>
-                                </section>
+                <div class="my-4 col-sm-12 col-md-4">
+                    <div  class="bg-white shadow rounded">
+                      <div class="contenedor">
+                        <a href="./pages/aquinohaynada.html" class="text-decoration-none text-dark"><img class="w-100 rounded" src="./assets/img/floatin.webp" alt="Chica en el espacio sosteniendo una estrella">
+                      </div>
+                      <section class="ps-2">
+                        <p>Mi cómic</p></a>
+                      </section>
                                 
-                            </div>
                     </div>
-                
+                </div>
             </div>
-        </section>
+         </section>
        <section class="text-center bg-white pt-2 pb-4">
         <h2 class="fs-2">¿Te gusta mi trabajo?</h2>
         <h3 class="mb-3 fs-3">¡Hablemos!</h3>
@@ -92,11 +108,11 @@
             </section> 
         </div>
           
-            <section class="d-flex justify-content-center gap-3">
-                <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/ailen-jaccottet/" target="_blank" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://twitter.com/?lang=es" target="_blank" class="text-white"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white"><i class="fa-brands fa-whatsapp"></i></a>
+            <section class="d-flex justify-content-center gap-3 mb-3">
+                <a href="https://www.instagram.com/" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ailen-jaccottet/" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-whatsapp"></i></a>
             </section>
     </footer>
   <script src="./js/bootstrap.bundle.min.js"></script>

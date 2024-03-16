@@ -10,49 +10,121 @@
         <link rel="stylesheet" href="../css/estilos.css">
      </head>
      <body>
-        <header>
-            <ul class="nav nav-tabs justify-content-around align-items-center navIzq">
-                <li class="nav-item">
-                  <a class="nav-link color-lila" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link color-lila" href="./uxui.html">UX/UI</a>
-                </li>
-            </ul> 
-            <a href="../index.html" class="miLogo"><img src="../assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
-            <ul class="nav nav-tabs justify-content-around align-items-center navDer">
-                <li class="nav-item dropdown">
+        <header class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+              <!-- Logo que aparece en pantallas pequeñas-->
+              <a href="../index.html" class="d-md-none miLogo"><img src="../assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
+          
+              <!-- Botón hamburguesa -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-between align-items-center">
+                  <li class="nav-item color-lila">
+                    <a class="nav-link color-lila" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item color-lila">
+                    <a class="nav-link color-lila" href="./uxui.html">UX/UI</a>
+                  </li>
+                  <a href="../index.html" class="miLogo d-none d-md-block"><img src="../assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
+                  <li class="nav-item dropdown color-lila">
                     <a class="nav-link dropdown-toggle color-lila" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Proyectos</a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item color-lila" href="./ilustraciones.html">Ilustraciones</a></li>
                       <li><a class="dropdown-item color-lila" href="#">Cómic</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link color-lila" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+                  </li>
+                  <li class="nav-item color-lila">
+                    <a class="nav-link color-lila" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </header>
    <main>
      <h1 class="d-flex justify-content-center">Aquí no hay nada</h1>
-     <p class="mx-4 text-center">"Aquí no hay nada" es un cómic de suspenso y fantasía. Seguimos la vida de Nicole, una joven estudiante y cajera a medio tiempo, quien busca independizarse desesperadamente. El destino la llevó a mudarse a un edificio precario, en donde además de goteras y manchas sospechosas, hay una puerta al final del pasillo, con un cartel que indica "Aquí no hay nada". </p>
+     <p class="mx-md-4 mx-2 justify-content-md-center">"Aquí no hay nada" es un cómic de suspenso y fantasía. Seguimos la vida de Nicole, una joven estudiante y cajera a medio tiempo, quien busca independizarse desesperadamente. El destino la llevó a mudarse a un edificio precario, en donde además de goteras y manchas sospechosas, hay una puerta al final del pasillo, con un cartel que indica "Aquí no hay nada". </p>
      <div class="bg-white pt-4">
+      <div>
+        <h2 class="mx-5">Reseñas y opiniones</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide carrusel mx-md-4" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+             <div class="mx-5">
+              <h3>Lucas J.</h3>
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="">"Al enterarme que "Aquí no hay nada" era un cómic basado en hechos reales, se me pusieron los pelos de punta. Se genera de forma constante una tensión como espectador, si te gusta el suspenso realmente es una historia que no puedes dejar pasar."</p>
+             </div>
+              
+            </div>
+            <div class="carousel-item">
+              <div class=" mx-5">
+                <h3>Alexa G.</h3>
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="mb-0">""Aquí no hay nada" es ese tipo de historia que te deja con ganas de saber más, me costó despegar la vista del cómic. </p>
+                <p>Nicole es un personaje con el que fácilmente te puedes identificar, sin dudas lo recomiendo."</p>
+              </div>
+              </div>
+             
+            <div class="carousel-item"> 
+              <div class="mx-5">
+                <h3>Diego B.</h3>
+                  <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+               <p class="mb-0">"¡Fascinante cómic! estuve enganchadísimo de principio a final. Gracias a una escena, ahora ya no puedo ver igual a los ascensores, totalmente recomendable.</p>  
+               <p>(A no ser que quieras seguir usando tu ascensor)."</p>     
+              </div>
+               
+            </div>
+          </div>
+          <button class="carousel-control-prev d-flex justify-content-start" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next d-flex justify-content-end" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
       <div class="d-flex justify-content-center">
-        <img  src="../assets/img/floatin.webp" alt="Chica en el espacio sosteniendo una estrella"></p>
+        <img class="imgFluido" src="../assets/img/floatin.webp" alt="Chica en el espacio sosteniendo una estrella"></p>
        </div>
       
        <h2 class="text-center mt-4">Próximas firmas</h2>
-      <div  class="d-flex justify-content-center">
+      <div  class="d-flex justify-content-center flex-wrap">
         <div class="me-4">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.6576168057195!2d-56.1893640089566!3d-34.859372501668695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a02aa447b12881%3A0xc3651d223d8866be!2sParque%20Social%20%7C%20CAMBADU!5e0!3m2!1ses-419!2suy!4v1707135237676!5m2!1ses-419!2suy" 
           width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <p class="text-center">Montevideo, Parque Social CAMANDU. Frikifest 02/03 </p>
-      </div>
-      <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13088.341077787558!2d-56.148967694676735!3d-34.90430958920706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f811a819d5a1f%3A0x3312df81e9d54d8!2sParque%20Villa%20Dolores!5e0!3m2!1ses-419!2suy!4v1707135414931!5m2!1ses-419!2suy" 
-          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <p>Montevideo, Parque Villa Dolores. Espacio Cultural 10/03 </p>
-      </div>
+          <p class="text-center mb-4">Montevideo, Parque Social CAMANDU. Frikifest 02/03 </p>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13088.341077787558!2d-56.148967694676735!3d-34.90430958920706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f811a819d5a1f%3A0x3312df81e9d54d8!2sParque%20Villa%20Dolores!5e0!3m2!1ses-419!2suy!4v1707135414931!5m2!1ses-419!2suy" 
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="text-center mb-4">Montevideo, Villa Dolores. Espacio Cultural 10/03 </p>
+        </div>
          
       </div>
        
@@ -68,11 +140,11 @@
         </section> 
     </div>
       
-        <section class="d-flex justify-content-center gap-3">
-            <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/ailen-jaccottet/" target="_blank" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/?lang=es" target="_blank" class="text-white"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white"><i class="fa-brands fa-whatsapp"></i></a>
+        <section class="d-flex justify-content-center gap-3 mb-3">
+            <a href="https://www.instagram.com/" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ailen-jaccottet/" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-whatsapp"></i></a>
         </section>
 </footer>
 <script src="../js/bootstrap.bundle.min.js"></script>

@@ -10,28 +10,40 @@
         <link rel="stylesheet" href="../css/estilos.css">
      </head>
      <body>
-        <header>
-            <ul class="nav nav-tabs justify-content-around align-items-center navIzq">
-                <li class="nav-item">
-                  <a class="nav-link color-lila" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link color-lila" href="#">UX/UI</a>
-                </li>
-            </ul> 
-            <a href="../index.html" class="miLogo"><img src="../assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
-            <ul class="nav nav-tabs justify-content-around align-items-center navDer">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle color-lila" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Proyectos</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item color-lila" href="./ilustraciones.html">Ilustraciones</a></li>
-                      <li><a class="dropdown-item color-lila" href="./aquinohaynada.html">Cómic</a></li>
+        <header class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                  <!-- Logo que aparece en pantallas pequeñas-->
+                  <a href="../index.html" class="d-md-none miLogo"><img src="../assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
+              
+                  <!-- Botón hamburguesa -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-between align-items-center">
+                      <li class="nav-item color-lila">
+                        <a class="nav-link color-lila" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item color-lila">
+                        <a class="nav-link color-lila" href="#">UX/UI</a>
+                      </li>
+                      <a href="../index.html" class="miLogo d-none d-md-block"><img src="../assets/img/logo.webp" class="imagen" alt="logo personal, una montaña con una estrella fugaz, formado por la A y la J"></a>
+                      <li class="nav-item dropdown color-lila">
+                        <a class="nav-link dropdown-toggle color-lila" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Proyectos</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item color-lila" href="./ilustraciones.html">Ilustraciones</a></li>
+                          <li><a class="dropdown-item color-lila" href="./aquinohaynada.html">Cómic</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item color-lila">
+                        <a class="nav-link color-lila" href="./contacto.html">Contacto</a>
+                      </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link color-lila" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
    <main>
     <div>
@@ -44,33 +56,122 @@
        <div class="m-4">
             <h2>TIMU</h2>
             <p>Timu es una app ficticia pensada para estimular la creatividad en adultos mayores. La misma usa un método de desafíos para la superación personal en el área recreativa que elija el usuario, ya que le permite guardar fotos de su creación, y escribir qué le pareció su trabajo.</p>
-            <div class="d-flex justify-content-evenly">
-                <img class="imagenesUX shadow" src="../assets/img/timu.webp" alt="">
-                <img class="imagenesUX shadow" src="../assets/img/timu2.webp" alt="">
-                <img class="imagenesUX shadow" src="../assets/img/timu3.webp" alt="">
-            </div>  
+            <div class="d-flex flex-column align-items-center">
+              <div id="carouselExampleAutoplaying1" class="carousel slide mx-md-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="mx-5"> 
+                      <img class="imagenesUX shadow mb-3" src="../assets/img/timu.webp" alt="">
+                     </div>
+      
+                  </div>
+                  <div class="carousel-item">
+      
+                      <div class=" mx-5">
+                        <img class="imagenesUX shadow mb-3" src="../assets/img/timu2.webp" alt="">
+                      </div>
+                  </div>
+                  <div class="carousel-item"> 
+      
+                     <div class="mx-5">
+                      <img class="imagenesUX shadow mb-3 d-flex justify-content-center" src="../assets/img/timu3.webp" alt="">
+                     </div>
+      
+                </div>
+               </div>
+                <button class="carousel-control-prev d-flex justify-content-start" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-flex justify-content-end" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+           
+        
        </div>
        <div class="m-4">
             <h2>Huellitas</h2>
             <p>Huellitas es una web ficticia de un centro de adopción. La idea de la misma es incentivar al usuario a adoptar un animal, o a colaborar con la causa. Cuenta con un generador de mascotas al azar, lo que puede resultar novedoso para el usuario, y sería útil para que muchos animales (que de otra forma podrían ser ignorados) puedan encontrar un hogar.</p>
-            <div class="d-flex flex-column align-items-center ">
-                <img class="imagenesUX mb-3 shadow" src="../assets/img/huellitasweb.webp" alt="">
-                <img class="imagenesUX mb-3 shadow" src="../assets/img/huellitasweb2.webp" alt="">
-                <img class="imagenesUX mb-3 shadow" src="../assets/img/huellitas3.webp" alt="">
+            <div class="d-flex flex-column align-items-center">
+              <div id="carouselExampleAutoplaying2" class="carousel slide mx-md-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                   
+                     <div class="mx-5"> 
+                      <img class="mb-3 shadow" src="../assets/img/huellitasweb.webp" alt="">
+                     </div>
+        
+                  </div>
+                  <div class="carousel-item">
+        
+                      <div class=" mx-5">
+                        <img class=" mb-3 shadow" src="../assets/img/huellitasweb2.webp" alt="">
+                      </div>
+                  </div>
+                  <div class="carousel-item"> 
+        
+                     <div class="mx-5">
+                      <img class=" mb-3 shadow" src="../assets/img/huellitas3.webp" alt="">
+                     </div>
+        
+                </div>
+               </div>
+                <button class="carousel-control-prev d-flex justify-content-start" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next d-flex justify-content-end" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
        </div>
         <div class="m-4">
             <h2>The best beer</h2>
             <p>The best beer es una app ficticia, pensada para una cervecería artesanal al aire libre. Su utilidad se debe a la posibilidad de cambiar el menú de idioma para personas extranjeras, y que el usuario pueda realizar su pedido de forma más rápida y eficiente.</p>
-            <div class="d-flex justify-content-evenly">
-                <img class="imagenesUX shadow" src="../assets/img/thebestbeer2.webp" alt="">
-                <img class="imagenesUX shadow" src="../assets/img/thebestbeer.webp" alt="">
-                <img class="imagenesUX shadow" src="../assets/img/thebestbeer3.webp" alt="">
+           <div class="d-flex flex-column align-items-center">
+            <div id="carouselExampleAutoplaying3" class="carousel slide mx-md-4" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+    
+                   <div class="mx-5"> 
+                    <img class="imagenesUX shadow mb-3 " src="../assets/img/thebestbeer2.webp" alt=""> 
+
+                   </div>
+    
+                </div>
+                <div class="carousel-item">
+    
+                    <div class=" mx-5">
+                      <img class="imagenesUX shadow mb-3" src="../assets/img/thebestbeer.webp" alt="">
+
+                    </div>
+                </div>
+                <div class="carousel-item"> 
+    
+                   <div class="mx-5">
+                    <img class="imagenesUX shadow mb-3" src="../assets/img/thebestbeer3.webp" alt="">
+                   </div>
+    
+              </div>
+             </div>
+              <button class="carousel-control-prev d-flex justify-content-start" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d-flex justify-content-end" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-        </div>
-            
-    </div>
-            
+           </div>
+           
+        </div>      
+    </div>      
    </main>
    <footer class="py-3" >
     <div class="container-fluid text-white">
@@ -81,11 +182,11 @@
         </section> 
     </div>
       
-        <section class="d-flex justify-content-center gap-3">
-            <a href="https://www.instagram.com/" target="_blank" class="text-white"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/ailen-jaccottet/" target="_blank" class="text-white"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/?lang=es" target="_blank" class="text-white"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white"><i class="fa-brands fa-whatsapp"></i></a>
+        <section class="d-flex justify-content-center gap-3 mb-3">
+            <a href="https://www.instagram.com/" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ailen-jaccottet/" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/?lang=es" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank" class="text-white botonTransicion"><i class="fa-brands fa-whatsapp"></i></a>
         </section>
 </footer>
  <script src="../js/bootstrap.bundle.min.js"></script>

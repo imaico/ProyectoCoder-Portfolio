@@ -1,116 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Playfair+Display:wght@600&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+  list-style: none;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Playfair+Display:wght@600&display=swap');
-
-*{
-    font-family: 'Karla', sans-serif;
-    list-style: none;
-} 
 h1 {
-    font-family: 'Playfair Display', serif; 
+  font-family: "Playfair Display", serif;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;   
+  font-family: "Playfair Display", serif;
+}
+
+.color-lila {
+  color: #9e66ff;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #3e0b7d;
 }
 
 header {
-    background-color: white;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "navizq navizq logo navder navder";
-        .color-lila{
-            color: #9e66ff; 
-        }
-        .nav-link:hover, .nav-link:focus {
-            color: #3e0b7d;
-          }
-        .navIzq {
-                grid-area: navizq;
-             
-            }
-        .navDer {
-                grid-area: navder;
-                 
-         }
-        .miLogo {
-                grid-area: logo;
-                justify-self: center;
-                .imagen {
-                    width: 80px;
-                }
-        }
-        .icono {
-            display: inline-block;
-            width: 1.5em;
-            height: 1.5em;
-            vertical-align: middle;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 100%;
-        }
-    }
+  background-color: white;
+}
+header .miLogo {
+  grid-area: logo;
+  justify-self: center;
+}
+header .miLogo .imagen {
+  width: 80px;
+}
+header .navbar-light .navbar-nav .nav-link {
+  color: #9e66ff;
+}
 
 main {
-    background-color: #9e66ff;
-    .contactame {
-        background-color: #9e66ff;
-    }
-    .imgFondo {
-        background-image: url(../assets/img/pexels-anni-roenkae-3109850.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .miPresentacion {
-        background-color:#3e0b7d;
-            height: 90vh;
-            text-shadow:
-            -1px -1px 0 #000,  
-             1px -1px 0 #000,
-            -1px  1px 0 #000,
-             1px  1px 0 #000;
-            .miNombre {
-                font-size: 4rem;
-                align-self: center;
-                justify-self: center;
-            }
+  background-color: #9e66ff;
+  /*contacto*/
 }
-.w-25 {
- 
-    object-fit: cover;
+main .contactame {
+  background-color: #9e66ff;
 }
-/*contacto*/
-input[type="email"]:valid {
-    border: 2px solid #3e0b7d;
-    background: #cab4fae9;
-  }
-.span.navbar-toggler-icon {
-    color: #3e0b7d;
+main .imgFondo {
+  background-image: url(../assets/img/pexels.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.botonConfirmar {
-    background-color: #9e66ff;
-    border-color: #9e66ff;
+main .miPresentacion {
+  background-color: #3e0b7d;
+  height: 90vh;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-.form-control:focus {
-    border-color: #3e0b7d;
-    box-shadow: 0 0 0 0.25rem #cab4fae9;
+main .miPresentacion .miNombre {
+  font-size: 4rem;
+  align-self: center;
+  justify-self: center;
+}
+main .w-25 {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main input[type=email]:valid {
+  border: 2px solid #3e0b7d;
+  background: #cab4fa;
+}
+main .span.navbar-toggler-icon {
+  color: #3e0b7d;
+}
+main .botonConfirmar {
+  background-color: #9e66ff;
+  border-color: #9e66ff;
+}
+main .form-control:focus {
+  border-color: #3e0b7d;
+  box-shadow: 0 0 0 0.25rem #cab4fa;
+}
 
 /*UX/UI*/
-imagenesUX {
-    width: 200px;
+.imagenesUX {
+  width: 200px;
 }
 
+.carrusel {
+  justify-content: center;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  background-color: #cab4fa;
 }
 
+.contenedor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
+.contenedor img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.contenedor:hover img {
+  transform: scale(1.3);
+  filter: initial;
+}
+
+.imgFluido {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.videoYoutube {
+  width: 315px;
+  height: 177px;
+}
+
+@media (min-width: 780px) {
+  .videoYoutube {
+    width: 560px;
+    height: 315px;
+  }
+}
 footer {
-    background-color: #3e0b7d;
-
+  background-image: linear-gradient(to top, #9e66ff, #864fdd, #6d39bc, #56239c, #3e0b7d);
 }
 
+.botonTransicion {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
 
-
-
-
+.botonTransicion:hover {
+  transform: translateY(-3px);
+}/*# sourceMappingURL=estilos.css.map */

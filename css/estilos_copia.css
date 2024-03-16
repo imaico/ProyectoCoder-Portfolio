@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Playfair+Display:wght@600&display=swap');
+
+*{
+    font-family: 'Karla', sans-serif;
+    list-style: none;
+} 
+h1 {
+    font-family: 'Playfair Display', serif; 
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;   
+}
+
+header {
+    background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "navizq navizq logo navder navder";
+        .color-lila{
+            color: #9e66ff; 
+        }
+        .nav-link:hover, .nav-link:focus {
+            color: #3e0b7d;
+          }
+        .navIzq {
+                grid-area: navizq;
+             
+            }
+        .navDer {
+                grid-area: navder;
+                 
+         }
+        .miLogo {
+                grid-area: logo;
+                justify-self: center;
+                .imagen {
+                    width: 80px;
+                }
+        }
+        .icono {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+    }
+
+main {
+    background-color: #9e66ff;
+    .contactame {
+        background-color: #9e66ff;
+    }
+    .imgFondo {
+        background-image: url(../assets/img/pexels-anni-roenkae-3109850.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .miPresentacion {
+        background-color:#3e0b7d;
+            height: 90vh;
+            text-shadow:
+            -1px -1px 0 #000,  
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+            .miNombre {
+                font-size: 4rem;
+                align-self: center;
+                justify-self: center;
+            }
+}
+.w-25 {
+ 
+    object-fit: cover;
+}
+/*contacto*/
+input[type="email"]:valid {
+    border: 2px solid #3e0b7d;
+    background: #cab4fae9;
+  }
+.span.navbar-toggler-icon {
+    color: #3e0b7d;
+}
+.botonConfirmar {
+    background-color: #9e66ff;
+    border-color: #9e66ff;
+}
+.form-control:focus {
+    border-color: #3e0b7d;
+    box-shadow: 0 0 0 0.25rem #cab4fae9;
+
+/*UX/UI*/
+imagenesUX {
+    width: 200px;
+}
+
+}
+
+}
+
+footer {
+    background-color: #3e0b7d;
+
+}

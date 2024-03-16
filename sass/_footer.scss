@@ -1,0 +1,19 @@
+
+footer {
+    background-image: linear-gradient(to top, #9e66ff, #864fdd, #6d39bc, #56239c, #3e0b7d);
+  }
+
+.botonTransicion {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  .botonTransicion:hover {
+    transform: translateY(-3px);
+  }
