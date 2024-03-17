@@ -3,3 +3,9 @@
     background-position: center;
     background-size: $size;
 }
+
+@mixin flexJustify ($valor) {
+    display: flex;
+    justify-content: $valor;
+    align-items: center;
+}

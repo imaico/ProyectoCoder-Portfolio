@@ -9,6 +9,9 @@
               }
            header {
         background-color: map-get($colores, blanco);
+        .miHeader {
+          @include flexJustify (between);
+        }
            
             .miLogo {
                     grid-area: logo;
@@ -18,7 +21,6 @@
                     }
             }
        
-    
   .navbar-light .navbar-nav .nav-link {
     color: map-get($colores, lila)
   }
