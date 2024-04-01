@@ -1,28 +1,28 @@
 
 @import 'mixins';
 
-            .color-lila{
-                color: map-get($colores, lila); 
-            }
-            .nav-link:hover, .nav-link:focus {
-                color: map-get($colores, violeta);
-              }
-           header {
-        background-color: map-get($colores, blanco);
-        .miHeader {
-          @include flexJustify (between);
-        }
-           
-            .miLogo {
-                    grid-area: logo;
-                    justify-self: center;
-                    .imagen {
-                        width: 80px;
-                    }
-            }
-       
-  .navbar-light .navbar-nav .nav-link {
-    color: map-get($colores, lila)
+  .color-lila{
+       color: map-get($colores, lila); 
   }
+        
+  header {
+    font-size: 20px;
+    background-color: map-get($colores, blanco);
+    .miHeader {
+      @include flexJustify (between);
+      } 
+    .miLogo {
+      grid-area: logo;
+      justify-self: center;
+      .imagen {
+          width: 80px;
+      }
+    }   
+   .navbar-light .navbar-nav .nav-link {
+      color: map-get($colores, lila)
+    }
+    .navbar-light:hover .navbar-nav:hover .nav-link:hover {
+      color: map-get($colores, violeta)
+    }
   }
 

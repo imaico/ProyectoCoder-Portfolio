@@ -16,11 +16,8 @@ h2 {
   color: #9e66ff;
 }
 
-.nav-link:hover, .nav-link:focus {
-  color: #3e0b7d;
-}
-
 header {
+  font-size: 20px;
   background-color: white;
 }
 header .miHeader {
@@ -38,6 +35,20 @@ header .miLogo .imagen {
 header .navbar-light .navbar-nav .nav-link {
   color: #9e66ff;
 }
+header .navbar-light:hover .navbar-nav:hover .nav-link:hover {
+  color: #3e0b7d;
+}
+
+.imgFondo {
+  background-image: url(../assets/img/pexels.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.uxFondo {
+  background-color: #cab4fa;
+}
 
 main {
   background-color: #9e66ff;
@@ -46,24 +57,21 @@ main {
 main .contactame {
   background-color: #9e66ff;
 }
-main .imgFondo {
-  background-image: url(../assets/img/pexels.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 main .miPresentacion {
   background-color: #3e0b7d;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 main .miPresentacion .miNombre {
   font-size: 4rem;
   align-self: center;
   justify-self: center;
+}
+main .titulo {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: white;
 }
 main .tamanio100, main .contenedor img, main .contenedor {
   width: 100%;
@@ -96,6 +104,14 @@ main .botonConfirmar {
 main .form-control:focus {
   border-color: #3e0b7d;
   box-shadow: 0 0 0 0.25rem #cab4fa;
+}
+
+.parrafoIndex {
+  margin: 0px 70px 0px 70px;
+}
+
+.sobremiIndex {
+  padding: 20px;
 }
 
 /*UX/UI*/
@@ -137,11 +153,23 @@ main .form-control:focus {
     height: 315px;
   }
 }
+.color-negro {
+  color: #000;
+}
+
+/* Ajusta el color de las flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) !important;
+}
+
 footer {
   background-image: linear-gradient(to top, #9e66ff, #864fdd, #6d39bc, #56239c, #3e0b7d);
+  font-size: 18px;
 }
 
 .botonTransicion {
+  font-size: 22px;
   width: 40px;
   height: 30px;
   display: flex;
@@ -153,5 +181,5 @@ footer {
 }
 
 .botonTransicion:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }/*# sourceMappingURL=estilos.css.map */
