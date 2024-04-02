@@ -14,7 +14,7 @@ main {
     }
     .miPresentacion {
         background-color: map-get($colores, violeta);
-        height: 90vh;
+        height: 65vh;
         @include flexJustify (center);
         .miNombre {
             font-size: 4rem;
@@ -50,7 +50,7 @@ main {
         filter: initial;
     }
     .bg-violet {
-        background-color: map-get($colores, violeta );
+        background-color: map-get($colores, violeta);
     }
 
     /*contacto*/
