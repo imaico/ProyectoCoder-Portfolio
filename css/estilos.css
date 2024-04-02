@@ -105,13 +105,8 @@ main .form-control:focus {
   border-color: #3e0b7d;
   box-shadow: 0 0 0 0.25rem #cab4fa;
 }
-
-.parrafoIndex {
-  margin: 0px 70px 0px 70px;
-}
-
-.sobremiIndex {
-  padding: 20px;
+main .fs-5 {
+  font-size: 1.25rem;
 }
 
 /*UX/UI*/

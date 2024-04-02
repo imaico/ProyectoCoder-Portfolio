@@ -49,29 +49,25 @@ main {
         transform: scale(1.3);
         filter: initial;
     }
-/*contacto*/
-input[type="email"]:valid {
-    border: 2px solid map-get($colores , violeta);
-    background: map-get($colores , lilaClaro);
-}
-.span.navbar-toggler-icon {
-    color: map-get($colores, violeta);
-}
-.botonConfirmar {
-    background-color: map-get($colores ,lila );
-    border-color: map-get($colores, lila);
-}
-.form-control:focus {
-    border-color: map-get($colores, violeta );
-    box-shadow: 0 0 0 0.25rem map-get($colores , lilaClaro);}
-}
-
-.parrafoIndex {
-    margin: 0px 70px 0px 70px;
-}
-
-.sobremiIndex {
-    padding: 20px;
+    
+    /*contacto*/
+    input[type="email"]:valid {
+        border: 2px solid map-get($colores , violeta);
+        background: map-get($colores , lilaClaro);
+    }
+    .span.navbar-toggler-icon {
+        color: map-get($colores, violeta);
+    }
+    .botonConfirmar {
+        background-color: map-get($colores ,lila );
+        border-color: map-get($colores, lila);
+    }
+    .form-control:focus {
+        border-color: map-get($colores, violeta );
+        box-shadow: 0 0 0 0.25rem map-get($colores , lilaClaro);}
+    .fs-5 {
+        font-size: 1.25rem;
+    }
 }
 /*UX/UI*/
 
