@@ -49,7 +49,10 @@ main {
         transform: scale(1.3);
         filter: initial;
     }
-    
+    .bg-violet {
+        background-color: map-get($colores, violeta );
+    }
+
     /*contacto*/
     input[type="email"]:valid {
         border: 2px solid map-get($colores , violeta);
